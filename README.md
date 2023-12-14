@@ -1,2 +1,20 @@
-# CV-Application
-CV application created with React
+# React JS Resume Application
+
+⚛️ Description:
+
+I've developed a dynamic and user-friendly resume maker using React. This application allows users to easily create and customize their resumes with a sleek and modern interface. Leveraging React's component-based architecture, the resume maker provides a seamless experience for users to input their professional information, skills, and experiences, generating a visually appealing and professionally formatted resume. Responsive design ensures it looks sharp on any device, making it an effective tool for individuals looking to showcase their qualifications in the job market.
+
+🎨 Features: 
+
+- Downloadable PDF: Easily download and share your resume in PDF format for job applications.
+- React Component Architecture: Built with the power of React for a smooth and dynamic user experience.
+- User-Friendly Interface: Intuitive design makes it easy for anyone to create a resume without hassle.
+- Responsive Design: Ensures your resume looks great on desktops, tablets, and smartphones.
+- Real-time Preview: Instantly see how your changes impact the final document.
+
+💻 Built with: 
+
+- React JS,
+- CSS/HTML.
+
+✨ Live version is available for preview [here]().
