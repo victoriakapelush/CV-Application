@@ -17,4 +17,4 @@ I've developed a dynamic and user-friendly resume maker using React. This applic
 - React JS,
 - CSS/HTML.
 
-✨ Live version is available for preview [here]().
+✨ Live version is available for preview [here](https://raw.githack.com/victoriakapelush/CV-Application/main/index.html).
