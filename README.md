@@ -6,7 +6,6 @@ I've developed a dynamic and user-friendly resume maker using React. This applic
 
 🎨 Features: 
 
-- Downloadable PDF: Easily download and share your resume in PDF format for job applications.
 - React Component Architecture: Built with the power of React for a smooth and dynamic user experience.
 - User-Friendly Interface: Intuitive design makes it easy for anyone to create a resume without hassle.
 - Responsive Design: Ensures your resume looks great on desktops, tablets, and smartphones.
@@ -17,4 +16,7 @@ I've developed a dynamic and user-friendly resume maker using React. This applic
 - React JS,
 - CSS/HTML.
 
-✨ Live version is available for preview [here](https://raw.githack.com/victoriakapelush/CV-Application/main/index.html).
+✨ Screenshot is available for preview below.
+
+![resume](https://github.com/victoriakapelush/CV-Application/assets/42095608/afedcd0e-4556-482c-a86a-b3fdb78f3678)
+
