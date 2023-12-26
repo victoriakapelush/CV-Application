@@ -125,7 +125,8 @@ input:hover, input:focus {
 .position, .company, .years, .description, .degree, .college {
     text-align: left;
     margin: 0 0;
-    margin-top: .5rem;
+    padding: 0 0;
+    font-size: 1.1rem;
 }
 
 .position {
@@ -164,3 +165,63 @@ input:hover, input:focus {
     padding: 0 0;
     margin: 0 0;
 }
+
+.skill-container, .education-container {
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+
+.education-box {
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill {
+    text-transform: uppercase;
+    margin: 0 0;
+}
+
+.exp-row {
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+h1 {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration:overline;
+}
+
+img {
+    height: 2.7rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.header-container {
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.app-name {
+    justify-content: space-between;
+}
+
+.image-div {
+    gap: 1rem;
+}
+
+.personal-link {
+    text-align: center;
+}
+
