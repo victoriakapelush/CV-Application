@@ -1,17 +1,18 @@
 /* eslint-disable react/prop-types */
-import '../App.css'
+import React, { useRef } from 'react';
+import '../App.css';
+import { SaveToPDF } from './SaveToPDF';
 
-export default function Header(e) {
+export default function Header({ contentRef }) {
+    const generatePDF = SaveToPDF(contentRef); // Get the PDF generation function
     return (
         <div className='header-container flex-column inputsPersonalData'>
             <div className='app-name flex-row'>
-                <h1>Resume Builder</h1>
+                <h1 id='resume-builder-name'>Resume Builder</h1>
                 <div className='image-div flex-row'>
-                    <img src='./src/assets/user.png' onClick={e.setSampleData}></img>
-                    <img src='./src/assets/file.png'></img>
+                    <img src='./src/assets/file.png' onClick={generatePDF}></img>
                 </div>
             </div>
-            <p className='personal-link'>Developed by <a href="https://victoriakapelush.com" target='blank'>Victoria Kapelush</a></p>
         </div>
     )
 }

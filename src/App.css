@@ -20,19 +20,23 @@
     gap: 2rem;
     margin: 0 0;
     padding: 0 0;
+    height: auto;
+    max-width: 100%;
 }
 
 .app {
-    width: 60%;
+    flex: 0 0 60%; /* 60% width */
+    max-width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: start;
     gap: 2rem;
-    background-color: #d4d4d4;
 }
 
 .inputs {
     gap: 1rem;
+    flex: 1;
 }
 
 .name {
@@ -46,19 +50,16 @@
 }
 
 .occupation {
-    background-color: black;
-    color: white;
+    color: black;
     width: fit-content;
-    padding: .7rem .7rem;
-    border-radius: 8px;
     margin: 0 auto;
+    font-size: 1.5rem;
 }
 
 .bio {
-    margin: 0 auto;
-    width: fit-content;
+    margin: 0 3rem;
     word-wrap: break-word;
-    max-width: 90%;
+    max-width: 100%;
     text-align: left;
 }
 
@@ -72,15 +73,25 @@ fieldset {
     border: transparent;
     margin: 0 0;
     padding: 0 0;
-    gap: 1rem;
 }
 
-input {
+fieldset.flex-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    grid-gap: 2rem;
+    max-width: 100%;
+
+}
+
+.flex-row input, .occupation-input {
+    width: 100%;
+}
+
+input, textarea {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     height: 3rem;
-    width: 100%;
     margin-bottom: 1rem;
     border: transparent;
     background: #292929;
@@ -96,28 +107,47 @@ input:hover, input:focus {
 
 .inputsPersonalData {
     background: #1c1c1c;
-    width: 90%;
     padding: 1rem 2rem;
     color: darkgray;
+    height: auto;
 }
 
-.occupation-input, .bio-input {
-    width: 95%;
+textarea {
+    padding-top: 1rem;
+}
+
+.inputsPersonalData input,
+.inputsPersonalData textarea {
+    width: 100%;
+    max-width: 100%; 
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+.inputsPersonalData .flex-row {
+    display: flex;
+    gap: 10px;
+}
+
+.inputsPersonalData .flex-row input {
+    flex: 1; /* Make the inputs in the flex-row equally wide */
+}
+
+
+.inputsPersonalData h1 {
+    padding-bottom: 1rem;
+}
+
+#resume-builder-name {
+    padding: 0 !important;
 }
 
 .bio-input {
     height: 7rem;
 }
 
-.divider {
-    margin: 0 auto;
-    width: 90%;
-    height: .2rem;
-    background-color: black;
-}
-
 .experience-section, .education-section {
     flex-wrap: wrap;
+    max-width: 100%;
     margin-left: 3rem;
     margin-right: 3rem;
 }
@@ -144,10 +174,15 @@ input:hover, input:focus {
     cursor: pointer;
     font-size: 1.5rem;
     margin-top: 1rem;
+    border-color: transparent;
 }
 
 .button-add:hover, .button-add:focus {
     background: darkgray;
+}
+
+.extra-margin {
+    margin-bottom: 3rem;
 }
 
 .degree {
@@ -157,8 +192,9 @@ input:hover, input:focus {
 .contacts-box {
     gap: 1rem;
     justify-content: space-between;
-    margin: 0 3rem;
+    margin: 0 3rem 0 3rem;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .country, .email, .number, .website {
@@ -199,7 +235,7 @@ a {
 }
 
 a:hover {
-    text-decoration:overline;
+    text-decoration: underline;
 }
 
 img {
@@ -210,11 +246,11 @@ img {
 
 .header-container {
     justify-content: space-evenly;
-    width: 90%;
 }
 
 .app-name {
     justify-content: space-between;
+    align-items: center;
 }
 
 .image-div {
@@ -225,3 +261,34 @@ img {
     text-align: center;
 }
 
+/* Small screens (tablets in portrait mode) */
+@media (max-width: 768px) {
+    .app, .inputs {
+        flex: 0 0 100%; 
+        max-width: 100%; 
+    }
+}
+
+/* Medium screens (tablets in landscape mode, small desktops) */
+@media (max-width: 1024px) {
+    .app, .inputs {
+        flex: 0 0 100%; 
+        max-width: 100%; 
+    }
+}
+
+/* Very small screens (large phones, small tablets) */
+@media (max-width: 600px) {
+    .app, .inputs {
+        flex: 0 0 100%; 
+        max-width: 100%; 
+    }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+    .app, .inputs {
+        flex: 0 0 100%; 
+        max-width: 100%; 
+    }
+}
